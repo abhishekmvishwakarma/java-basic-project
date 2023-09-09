@@ -1,0 +1,18 @@
+<p>pipe works!</p>
+<div class="container">
+    <p>today date is:{{todayDate}}</p>
+    <p>Today date is:{{todayDate|date}}</p>
+    <p>Today date is:{{todayDate|date:"dd/MMM/yy"}}</p>
+    <p>Today date is:{{todayDate|date:"hh:mm:ss"}}</p>
+
+    <p>Name is:{{   name | uppercase }}</p>
+    <p>Name is:{{   name | lowercase }}</p>
+    <p>Name is:{{   name | slice : 0:9 }}</p>
+    <p>FirstName is:{{firstname | uppercase}}</p>
+    <p>price is:{{price | number:'2.2'}}</p>
+     
+    <p>{{getpercent()}}</p>
+    <p>{{getpercent() | percent : '2.2'}}</p>
+
+    <p>currency is :{{amount | currency }}</p>
+</div>
